@@ -6,7 +6,7 @@ app = Flask(__name__)
 @app.route("/")
 
 def hello():
-    html = "<h3>Hello World!-V1</h3> <b>Hostname:</b> {hostname}<br/>"
+    html = "<h3>Hello World!-V2</h3> <b>Hostname:</b> {hostname}<br/>"
     return html.format(hostname=socket.gethostname())
 
 if __name__ == "__main__":
